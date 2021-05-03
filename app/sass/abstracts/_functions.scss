@@ -1,0 +1,30 @@
+.website-wrapper {
+    max-width: $desktop-wrapper-width;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    @include breakpoint("tablet") {
+      max-width: $tablet-wrapper-width;
+    }
+    @include breakpoint("phone") {
+      max-width: $mobile-wrapper-width;
+    }
+  }
+
+.navigation-wrapper {
+  max-width: $navigation-wrapper-width;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+%clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

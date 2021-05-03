@@ -1,0 +1,250 @@
+.website-wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .website-wrapper {
+    max-width: 708px;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .website-wrapper {
+    max-width: 280px;
+  }
+}
+
+.navigation-wrapper {
+  max-width: 1405px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+[hidden*="true"],
+[hidden*="hidden"] {
+  display: none !important;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../app/fonts/Roboto-Regular.eot");
+  src: url("../../app/fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../../app/fonts/Roboto-Regular.woff2") format("woff2"), url("../../app/fonts/Roboto-Regular.woff") format("woff"), url("../../app/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../app/fonts/Montserrat-Regular.eot");
+  src: url("../../app/fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../../app/fonts/Montserrat-Regular.woff2") format("woff2"), url("../../app/fonts/Montserrat-Regular.woff") format("woff"), url("../../app/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+.brand {
+  width: 96px;
+  background: silver;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navigation-list {
+  font-size: 0;
+  padding-top: 6px;
+  margin-left: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navigation-list__item {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 32px;
+}
+
+.navigation-list__item:nth-of-type(2) {
+  position: relative;
+  right: 10px;
+}
+
+.navigation-list__item:nth-of-type(3) {
+  position: relative;
+  right: 23px;
+}
+
+.navigation-list__item:nth-of-type(4) {
+  position: relative;
+  right: 4px;
+}
+
+.navigation-item__item-link {
+  font-size: 13.5px;
+  text-transform: uppercase;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+.navigation--active {
+  border-bottom: 2px solid #fa292c;
+  margin-bottom: -2px;
+}
+/*# sourceMappingURL=main.css.map */
