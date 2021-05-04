@@ -1,13 +1,17 @@
-let navToggle = document.querySelector(".nav__toggle");
-let navWrapper = document.querySelector(".nav__wrapper");
-navToggle.addEventListener("click", function () {
-  if (navWrapper.classList.contains("active")) {
-    this.setAttribute("aria-expanded", "false");
-    this.setAttribute("aria-label", "menu");
-    navWrapper.classList.remove("active");
-  } else {
-    navWrapper.classList.add("active");
-    this.setAttribute("aria-label", "close menu");
-    this.setAttribute("aria-expanded", "true");
-  }
+// const hamburger = document.querySelector(".hamburger");
+// const navMenu = document.querySelector(".navigation-list");
+// const navLink = document.querySelectorAll(".navigation-list__item-link");
+
+// hamburger.addEventListener("click", mobileMenu);
+
+// function mobileMenu() {
+//     hamburger.classList.toggle("active");
+//     navMenu.classList.toggle("active");
+// }
+$(".hamburger").click(function() {
+  $(".hamburger, .navigation-list").toggleClass("active");
+});
+
+$(".navigation-list__item, .navigation-list__item-link").click(function() {
+  $(".hamburger, .navigation-list").removeClass("active");
 });

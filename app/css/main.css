@@ -18,10 +18,24 @@
 }
 
 .navigation-wrapper {
-  max-width: 1405px;
+  max-width: 1424px;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.brand:before, .navigation-list:before, .hamburger:before, .brand:after, .navigation-list:after, .hamburger:after {
+  content: " ";
+  display: table;
+}
+
+.brand:after, .navigation-list:after, .hamburger:after {
+  clear: both;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -196,55 +210,274 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("../../app/icons/icomoon.eot?449xu8");
+  src: url("../../app/icons/icomoon.eot?449xu8#iefix") format("embedded-opentype"), url("../../app/icons/icomoon.ttf?449xu8") format("truetype"), url("../../app/icons/icomoon.woff?449xu8") format("woff"), url("../../app/icons/icomoon.svg?449xu8#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Path:before {
+  content: "\e900";
+}
+
+.icon-chevron-right:before {
+  content: "\e901";
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
 .navigation {
   padding-top: 52px;
   padding-bottom: 52px;
 }
 
 .brand {
-  width: 96px;
-  background: silver;
+  width: 98px;
+  float: left;
+  margin-left: 10px;
   display: inline-block;
   vertical-align: middle;
 }
 
 .navigation-list {
   font-size: 0;
-  padding-top: 6px;
-  margin-left: auto;
-  display: inline-block;
-  vertical-align: middle;
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation-list {
+    padding-top: 6px;
+    float: right;
+    margin-right: 21px;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .navigation-list {
+    display: none;
+    position: relative;
+    width: 100%;
+  }
 }
 
 .navigation-list__item {
+  margin: 0 10px;
+  text-align: center;
   display: inline-block;
   vertical-align: middle;
-  padding: 0 32px;
 }
 
-.navigation-list__item:nth-of-type(2) {
-  position: relative;
-  right: 10px;
+@media only screen and (min-width: 768px) {
+  .navigation-list__item:last-of-type {
+    margin-right: 0;
+    position: relative;
+    left: 9px;
+  }
 }
 
-.navigation-list__item:nth-of-type(3) {
-  position: relative;
-  right: 23px;
-}
-
-.navigation-list__item:nth-of-type(4) {
-  position: relative;
-  right: 4px;
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .navigation-list__item {
+    display: block;
+    margin: 0;
+    padding: 20px 0;
+  }
 }
 
 .navigation-item__item-link {
   font-size: 13.5px;
   text-transform: uppercase;
   font-family: Roboto, Helvetica, sans-serif;
+  padding: 0 16px;
+  padding-bottom: 17px;
+  color: #808080;
+  letter-spacing: 0.3px;
 }
 
 .navigation--active {
   border-bottom: 2px solid #fa292c;
   margin-bottom: -2px;
+  color: #fdfdfd;
+}
+
+/* dropdown */
+.navigation li {
+  transition-duration: 0.5s;
+}
+
+.navigation li:hover {
+  cursor: pointer;
+}
+
+.navigation ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+  font-size: 16px;
+}
+
+.navigation ul li:hover > ul,
+.navigation ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.navigation ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+.navigation-button {
+  padding: 18px 32px;
+  background-color: #333333;
+  color: white;
+  border-radius: 6px;
+}
+
+/* mobile menu */
+.hamburger {
+  display: none;
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .hamburger {
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+  }
+}
+
+.navigation-list.active {
+  display: table;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fdfdfd;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  overflow: hidden;
+  max-height: 720px;
+}
+
+.mySlides:first-of-type {
+  background-color: #000002;
+}
+
+.mySlides__image {
+  width: 100%;
+}
+
+.mySlides__image:first-of-type {
+  width: 89%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  background-color: #262626;
+  font-size: 12px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -26px;
+  padding: 18px 21px;
+  color: white;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  border: 1px solid #414141;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  /* Translate icon */
+  transform: scaleX(-1);
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.mySlides__description {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 32%;
+  left: 137px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */
