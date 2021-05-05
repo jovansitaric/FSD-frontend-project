@@ -1,19 +1,14 @@
 .website-wrapper {
-  max-width: 940px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
+  font-size: 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .website-wrapper {
     max-width: 708px;
-  }
-}
-
-@media only screen and (min-width: 120px) and (max-width: 767px) {
-  .website-wrapper {
-    max-width: 280px;
   }
 }
 
@@ -23,7 +18,7 @@
   padding: 0 20px;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
@@ -189,7 +184,7 @@ table {
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: url("../../app/fonts/Roboto-Regular.eot");
   src: url("../../app/fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../../app/fonts/Roboto-Regular.woff2") format("woff2"), url("../../app/fonts/Roboto-Regular.woff") format("woff"), url("../../app/fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -198,7 +193,16 @@ table {
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Roboto Condensed';
+  src: url("../../app/fonts/RobotoCondensed-Regular.eot");
+  src: url("../../app/fonts/RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("../../app/fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../../app/fonts/RobotoCondensed-Regular.woff") format("woff"), url("../../app/fonts/RobotoCondensed-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
   src: url("../../app/fonts/Montserrat-Regular.eot");
   src: url("../../app/fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../../app/fonts/Montserrat-Regular.woff2") format("woff2"), url("../../app/fonts/Montserrat-Regular.woff") format("woff"), url("../../app/fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -206,8 +210,68 @@ table {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../app/fonts/Montserrat-Black.eot");
+  src: url("../../app/fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"), url("../../app/fonts/Montserrat-Black.woff2") format("woff2"), url("../../app/fonts/Montserrat-Black.woff") format("woff"), url("../../app/fonts/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../app/fonts/Montserrat-Bold.eot");
+  src: url("../../app/fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../../app/fonts/Montserrat-Bold.woff2") format("woff2"), url("../../app/fonts/Montserrat-Bold.woff") format("woff"), url("../../app/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../app/fonts/Montserrat-ExtraBold.eot");
+  src: url("../../app/fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../../app/fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../../app/fonts/Montserrat-ExtraBold.woff") format("woff"), url("../../app/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 a {
   text-decoration: none;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+}
+
+span {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+p {
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.captions {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 11px;
+  letter-spacing: 5.5px;
+  color: #fa292c;
+  text-transform: uppercase;
 }
 
 @font-face {
@@ -246,6 +310,181 @@ a {
   content: "\e9bd";
 }
 
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-small-1 {
+    width: 8.33%;
+  }
+  .col-small-2 {
+    width: 16.66%;
+  }
+  .col-small-3 {
+    width: 25%;
+  }
+  .col-small-4 {
+    width: 33.33%;
+  }
+  .col-small-5 {
+    width: 41.66%;
+  }
+  .col-small-6 {
+    width: 50%;
+  }
+  .col-small-7 {
+    width: 58.33%;
+  }
+  .col-small-8 {
+    width: 66.66%;
+  }
+  .col-small-9 {
+    width: 75%;
+  }
+  .col-small-10 {
+    width: 83.33%;
+  }
+  .col-small-11 {
+    width: 91.66%;
+  }
+  .col-small-12 {
+    width: 100%;
+  }
+}
+
+/* Custom tablet breakpoint */
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
+  .col-middle-1 {
+    width: 8.33%;
+  }
+  .col-middle-2 {
+    width: 16.66%;
+  }
+  .col-middle-3 {
+    width: 25%;
+  }
+  .col-middle-4 {
+    width: 33.33%;
+  }
+  .col-middle-5 {
+    width: 41.66%;
+  }
+  .col-middle-6 {
+    width: 50%;
+  }
+  .col-middle-7 {
+    width: 58.33%;
+  }
+  .col-middle-8 {
+    width: 66.66%;
+  }
+  .col-middle-9 {
+    width: 75%;
+  }
+  .col-middle-10 {
+    width: 83.33%;
+  }
+  .col-middle-11 {
+    width: 91.66%;
+  }
+  .col-middle-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* For desktop: */
+  .col-large-1 {
+    width: 8.33%;
+  }
+  .col-large-2 {
+    width: 16.66%;
+  }
+  .col-large-3 {
+    width: 25%;
+  }
+  .col-large-4 {
+    width: 33.33%;
+  }
+  .col-large-5 {
+    width: 41.66%;
+  }
+  .col-large-6 {
+    width: 50%;
+  }
+  .col-large-7 {
+    width: 58.33%;
+  }
+  .col-large-8 {
+    width: 66.66%;
+  }
+  .col-large-9 {
+    width: 75%;
+  }
+  .col-large-10 {
+    width: 83.33%;
+  }
+  .col-large-11 {
+    width: 91.66%;
+  }
+  .col-large-12 {
+    width: 100%;
+  }
+}
+
+/* All devices */
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .navigation {
   padding-top: 52px;
   padding-bottom: 52px;
@@ -254,7 +493,7 @@ a {
 .brand {
   width: 98px;
   float: left;
-  margin-left: 10px;
+  margin-left: 10.3px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -267,7 +506,7 @@ a {
   .navigation-list {
     padding-top: 6px;
     float: right;
-    margin-right: 21px;
+    margin-right: 28px;
   }
 }
 
@@ -280,7 +519,7 @@ a {
 }
 
 .navigation-list__item {
-  margin: 0 10px;
+  margin: 0 9.6px;
   text-align: center;
   display: inline-block;
   vertical-align: middle;
@@ -290,7 +529,7 @@ a {
   .navigation-list__item:last-of-type {
     margin-right: 0;
     position: relative;
-    left: 9px;
+    left: 14px;
   }
 }
 
@@ -303,18 +542,17 @@ a {
 }
 
 .navigation-item__item-link {
-  font-size: 13.5px;
+  font-size: 14px;
   text-transform: uppercase;
-  font-family: Roboto, Helvetica, sans-serif;
-  padding: 0 16px;
+  padding: 0 16.8px;
   padding-bottom: 17px;
   color: #808080;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.9px;
 }
 
 .navigation--active {
-  border-bottom: 2px solid #fa292c;
-  margin-bottom: -2px;
+  border-bottom: 1px solid #fa292c;
+  margin-bottom: -1px;
   color: #fdfdfd;
 }
 
@@ -350,10 +588,17 @@ a {
 }
 
 .navigation-button {
-  padding: 18px 32px;
+  padding: 17px 29px;
   background-color: #333333;
   color: white;
   border-radius: 6px;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+
+.navigation-button:hover {
+  background-color: transparent;
+  border: 1px solid #333333;
 }
 
 /* mobile menu */
@@ -399,13 +644,22 @@ a {
   max-width: 100%;
   position: relative;
   margin: auto;
+  height: 136.4vh;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
   overflow: hidden;
-  max-height: 720px;
+  height: inherit;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .mySlides {
+    background-position: center;
+  }
 }
 
 .mySlides:first-of-type {
@@ -456,12 +710,47 @@ a {
 .mySlides__description {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 32%;
-  left: 137px;
+  padding-top: 243px;
+  padding-bottom: 243px;
   text-align: center;
-  text-transform: uppercase;
+  height: inherit;
+  text-align: left;
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .mySlides__description {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
+}
+
+.mySlides__description-main-heading {
+  font-size: 48px;
+  max-width: 440px;
+  line-height: 57px;
+  margin-top: 19px;
+  font-weight: 700;
+}
+
+.mySlides__description-paragraph {
+  font-size: 14px;
+  line-height: 26px;
+  margin-top: 42px;
+  max-width: 350px;
+  padding-left: 49px;
+  position: relative;
+  color: #cdc4c5;
+}
+
+.mySlides__description-paragraph:before {
+  content: "";
+  border-left: 2px solid #fa292c;
+  right: 30px;
+  top: 8px;
+  position: absolute;
+  left: 18px;
+  width: 2px;
+  height: 61px;
 }
 
 /* Fading animation */
@@ -479,5 +768,176 @@ a {
   to {
     opacity: 1;
   }
+}
+
+.about-us-section {
+  padding-top: 57px;
+  padding-bottom: 57px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .about-us-section {
+    min-height: 730px;
+  }
+}
+
+.about-us__car {
+  position: relative;
+  top: 117px;
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .about-us__car {
+    top: 0;
+  }
+}
+
+.about-us__car-image {
+  position: relative;
+  z-index: 1;
+}
+
+.about-us__car-rectangle {
+  height: 98.2vh;
+  position: absolute;
+  top: -124px;
+  width: 63%;
+  left: 97px;
+  margin: 0 auto;
+  background-color: #212121;
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .about-us__car-rectangle {
+    height: 68vh;
+    top: -30px;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 488px) {
+  .about-us__car-rectangle {
+    height: 58vh;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 370px) {
+  .about-us__car-rectangle {
+    height: 47vh;
+  }
+}
+
+.about-us__car-rectangle-paragraph {
+  font-style: italic;
+  font-family: Montserrat, Helvetica, sans-serif;
+  position: absolute;
+  bottom: 34px;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  left: 28px;
+  color: #909090;
+}
+
+.about-us-description {
+  position: relative;
+  top: 111px;
+  padding-top: 19px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .about-us-description {
+    padding-left: 112px;
+  }
+}
+
+.about-us-description__main-heading {
+  font-size: 39px;
+  line-height: 47px;
+  margin-top: 16px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.about-us-description__paragraph {
+  font-size: 20px;
+  font-family: Montserrat, Courier, monospace;
+  margin-top: 41px;
+  line-height: 30px;
+}
+
+.about-us-description__second-paragraph {
+  font-family: Montserrat, Courier, monospace;
+  line-height: 26px;
+  margin-top: 18px;
+}
+
+.featured-section {
+  padding: 54px 0px;
+}
+
+.featured-section__main-heading {
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 17px;
+}
+
+.featured-section__paragraph {
+  margin-top: 24px;
+  line-height: 26px;
+  max-width: 560px;
+  font-size: 14px;
+}
+
+.featured-section__cards {
+  padding-top: 40px;
+}
+
+.featured-section__card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-height: 145px;
+  min-width: 165px;
+  margin-right: 28px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.featured-section__card:last-of-type {
+  margin-right: 0;
+}
+
+.featured-section__cards-caption {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2.4px;
+  display: block;
+  padding: 0 26px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.featured-section__cards-value {
+  font-size: 28px;
+  display: block;
+  padding: 24px 31px;
+  padding-bottom: 0;
+  font-weight: bold;
+  text-align: center;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+.featured-section__cards-second-value {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.7px;
+  padding-top: 15px;
+  font-family: Montserrat, Helvetica, sans-serif;
+  text-align: center;
+  font-style: italic;
+}
+
+.featured-section__cards-second-value:first-of-type {
+  position: relative;
+  right: 2px;
 }
 /*# sourceMappingURL=main.css.map */

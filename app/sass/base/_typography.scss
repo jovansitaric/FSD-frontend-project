@@ -1,27 +1,110 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('../../app/fonts/Roboto-Regular.eot');
-    src: url('../../app/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../../app/fonts/Roboto-Regular.woff2') format('woff2'),
-        url('../../app/fonts/Roboto-Regular.woff') format('woff'),
-        url('../../app/fonts/Roboto-Regular.ttf') format('truetype');
+    font-family: "Roboto";
+    src: url("../../app/fonts/Roboto-Regular.eot");
+    src: url("../../app/fonts/Roboto-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("../../app/fonts/Roboto-Regular.woff2") format("woff2"),
+        url("../../app/fonts/Roboto-Regular.woff") format("woff"),
+        url("../../app/fonts/Roboto-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../../app/fonts/Montserrat-Regular.eot');
-    src: url('../../app/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../../app/fonts/Montserrat-Regular.woff2') format('woff2'),
-        url('../../app/fonts/Montserrat-Regular.woff') format('woff'),
-        url('../../app/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-family: 'Roboto Condensed';
+    src: url('../../app/fonts/RobotoCondensed-Regular.eot');
+    src: url('../../app/fonts/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../app/fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+        url('../../app/fonts/RobotoCondensed-Regular.woff') format('woff'),
+        url('../../app/fonts/RobotoCondensed-Regular.ttf') format('truetype');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../app/fonts/Montserrat-Regular.eot");
+    src: url("../../app/fonts/Montserrat-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("../../app/fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("../../app/fonts/Montserrat-Regular.woff") format("woff"),
+        url("../../app/fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../app/fonts/Montserrat-Black.eot");
+    src: url("../../app/fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"),
+        url("../../app/fonts/Montserrat-Black.woff2") format("woff2"),
+        url("../../app/fonts/Montserrat-Black.woff") format("woff"),
+        url("../../app/fonts/Montserrat-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../app/fonts/Montserrat-Bold.eot");
+    src: url("../../app/fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../../app/fonts/Montserrat-Bold.woff2") format("woff2"),
+        url("../../app/fonts/Montserrat-Bold.woff") format("woff"),
+        url("../../app/fonts/Montserrat-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../app/fonts/Montserrat-ExtraBold.eot");
+    src: url("../../app/fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"),
+        url("../../app/fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+        url("../../app/fonts/Montserrat-ExtraBold.woff") format("woff"),
+        url("../../app/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
 
 a {
     text-decoration: none;
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+}
+
+span {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+p {
+    font-family: Montserrat, Helvetica, sans-serif;    
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.captions {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 11px;    
+    letter-spacing: 5.5px;
+    color: $accent-color;
+    text-transform: uppercase;
 }

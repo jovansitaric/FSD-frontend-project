@@ -1,0 +1,66 @@
+.featured-section {
+    padding: 54px 0px;
+}
+
+.featured-section__main-heading {
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 17px;
+}
+
+.featured-section__paragraph {
+    margin-top: 24px;
+    line-height: 26px;
+    max-width: 560px;
+    font-size: 14px;
+}
+
+.featured-section__cards {
+    padding-top: 40px;
+}
+
+.featured-section__card {
+    background-color: rgba($color: #fff, $alpha: 0.2);
+    border: 1px solid rgba($color: #fff, $alpha: 0.2);
+    min-height: 145px;
+    min-width: 165px;
+    margin-right: 28px;
+    color: #fff;
+    @include inline-block;
+    &:last-of-type() {
+        margin-right: 0;
+    }
+}
+
+.featured-section__cards-caption {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2.4px;
+    display: block;
+    padding: 0 26px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.featured-section__cards-value {
+    font-size: 28px;
+    display: block;
+    padding: 24px 31px;
+    padding-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    font-family: Montserrat, Helvetica, sans-serif;
+}
+.featured-section__cards-second-value {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 0.7px;
+    padding-top: 15px;
+    font-family: Montserrat, Helvetica, sans-serif;
+    text-align: center;
+    font-style: italic;
+    &:first-of-type() {
+        position: relative;
+        right: 2px;
+    }
+}

@@ -1,4 +1,4 @@
-@mixin breakpoint($value) {
+@mixin breakpoint($value, $second-value: 488px) {
     @if $value == "phone" {
         @media only screen and (min-width: 120px) and (max-width: 767px) {
             @content;
@@ -20,10 +20,18 @@
             @content;
         }
     } @else {
-        @media only screen and (min-width: $value) {
+        @media only screen and (min-width: $value) and (max-width: $second-value) {
             @content;
         }
     }
+}
+
+@mixin transition($x) {
+    -webkit-transition: $x;
+    -moz-transition: $x;
+    -ms-transition: $x;
+    -o-transition: $x;
+    transition: $x;
 }
 
 @mixin inline-block() {

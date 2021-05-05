@@ -1,0 +1,81 @@
+.about-us-section {
+    padding-top: 57px;
+    padding-bottom: 57px;
+    @include breakpoint("desktop") {
+        min-height: 730px;
+    }
+}
+
+.about-us__car {
+    position: relative;
+    top: 117px;
+    @include breakpoint("phone") {
+        top: 0;
+    }
+}
+
+.about-us__car-image {
+    position: relative;
+    z-index: 1;
+}
+
+.about-us__car-rectangle {
+    height: 98.2vh;
+    position: absolute;
+    top: -124px;
+    width: 63%;
+    left: 97px;
+    margin: 0 auto;
+    background-color: $nero-black;
+    @include breakpoint("phone") {
+        height: 68vh;
+        top: -30px;
+    }
+    @include breakpoint(120px, 488px) {
+        height: 58vh;
+    }
+    @include breakpoint(120px, 370px) {
+        height: 47vh;
+    }
+}
+
+.about-us__car-rectangle-paragraph {
+    font-style: italic;
+    font-family: Montserrat, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 34px;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    left: 28px;
+    color: #909090;
+}
+
+.about-us-description {
+    position: relative;
+    top: 111px;
+    padding-top: 19px;
+    @include breakpoint("desktop") {
+        padding-left: 112px;
+    }
+}
+
+.about-us-description__main-heading {
+    font-size: 39px;
+    line-height: 47px;
+    margin-top: 16px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.about-us-description__paragraph {
+    font-size: 20px;
+    font-family: Montserrat, Courier, monospace;
+    margin-top: 41px;
+    line-height: 30px;
+}
+
+.about-us-description__second-paragraph {
+    font-family: Montserrat, Courier, monospace;
+    line-height: 26px;
+    margin-top: 18px;
+}

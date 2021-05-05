@@ -3,13 +3,19 @@
     max-width: 100%;
     position: relative;
     margin: auto;
+    height: 136.4vh;
 }
 
 /* Hide the images by default */
 .mySlides {
     display: none;
     overflow: hidden;
-    max-height: 720px;
+    height: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include breakpoint("phone") {
+        background-position: center;
+    }
     &:first-of-type {
         background-color: #000002;
     }
@@ -18,20 +24,20 @@
 .mySlides__image {
     width: 100%;
     &:first-of-type() {
-        width: 89%;        
+        width: 89%;
     }
 }
 
 /* Next & previous buttons */
 .prev,
-.next {   
-    background-color: #262626; 
+.next {
+    background-color: #262626;
     font-size: 12px;
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -26px;    
+    margin-top: -26px;
     padding: 18px 21px;
     color: white;
     font-weight: bold;
@@ -42,10 +48,6 @@
 }
 
 /* Position the "next button" to the right */
-.prev {    
-    
-}
-
 .next {
     right: 0;
     /* Translate icon */
@@ -62,15 +64,43 @@
 .mySlides__description {
     color: #f2f2f2;
     font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 32%;
-    left: 137px;
+    padding-top: 243px;
+    padding-bottom: 243px;
     text-align: center;
-    text-transform: uppercase;
+    height: inherit;
+    text-align: left;
+    @include breakpoint("phone") {
+        padding-top: $navigation-height;
+        padding-bottom: $navigation-height;
+    }
 }
-.mySlides__description-captions {
-    
+
+.mySlides__description-main-heading {
+    font-size: 48px;
+    max-width: 440px;
+    line-height: 57px;
+    margin-top: 19px;
+    font-weight: 700;
+}
+
+.mySlides__description-paragraph {
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 42px;
+    max-width: 350px;
+    padding-left: 49px;
+    position: relative;
+    color: #cdc4c5;
+    &:before {
+        content: "";
+        border-left: 2px solid $accent-color;
+        right: 30px;
+        top: 8px;
+        position: absolute;
+        left: 18px;
+        width: 2px;
+        height: 61px;
+    }
 }
 
 /* Fading animation */

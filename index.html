@@ -65,13 +65,27 @@
             <!-- Slideshow container -->
             <div class="slideshow-container">
                 <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <img
+                <div
+                    class="mySlides fade"
+                    style="
+                        background-image: url('Assets/Images/header-img-1920.jpg');
+                    "
+                >
+                    <!-- <img
                         class="mySlides__image"
                         src="Assets/Images/header-img-1920.jpg"
-                    />
-                    <div class="mySlides__description">
-                        <p class="mySlides__description-captions">New arrival</p>
+                    /> -->
+                    <div class="mySlides__description website-wrapper">
+                        <p class="mySlides__description-captions captions">
+                            New arrival
+                        </p>
+                        <h1 class="mySlides__description-main-heading">
+                            Expectations put limitations on possibilities.
+                        </h1>
+                        <p class="mySlides__description-paragraph">
+                            The Audi Q8 offers a unique performance that blends
+                            sport and utility into a momentous SUV design.
+                        </p>
                     </div>
                 </div>
 
@@ -81,7 +95,6 @@
                         src="Assets/Images/section-banner-1920.jpg"
                         style="width: 100%"
                     />
-                    <div class="mySlides__description">Caption Two</div>
                 </div>
 
                 <!-- Next and previous buttons -->
@@ -100,5 +113,83 @@
             <script src="app/js/slider.js"></script>
         </section>
         <!-- Hero section end -->
+        <!-- About us section start -->
+        <section class="about-us-section">
+            <div class="website-wrapper">
+                <div class="about-us col-middle-6">
+                    <div class="about-us__car">
+                        <img
+                            class="about-us__car-image"
+                            src="Assets/Images/about-us-section.png"
+                            alt="Audi Q8"
+                        />
+                        <div class="about-us__car-rectangle">
+                            <p class="about-us__car-rectangle-paragraph">
+                                A progressive design, a powerful engine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-us-description col-middle-6">
+                    <p class="captions">About Q8</p>
+                    <h2 class="about-us-description__main-heading">
+                        Welcome to the 8th dimension. The new Audi Q8
+                    </h2>
+                    <p class="about-us-description__paragraph">
+                        With its imposing Singleframe in octagonal design, the
+                        Audi Q8 presents the new face of the Q family.
+                    </p>
+                    <p class="about-us-description__second-paragraph">
+                        The radiator grille combines with the forward-mounted
+                        spoiler and the strongly contoured air inlets to
+                        underline its confident look.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- About us section end -->
+        <section
+            class="featured-section"
+            style="
+                background-image: url('Assets/Images/section-banner-1920.jpg');
+            "
+        >
+            <div class="website-wrapper">
+                <div class="featured-section col-middle-6">
+                    <p class="captions">Featured</p>
+                    <h2 class="featured-section__main-heading">
+                        Brand new The Audi RSQ8
+                    </h2>
+                    <p class="featured-section__paragraph">
+                        The RS Q8 gives you the choice: depending on the
+                        selected equipment, its looks are even bolder and
+                        sportier to suit your personal ambitions
+                    </p>
+                    <div class="featured-section__cards">
+                        <div class="featured-section__card card">
+                            <span class="featured-section__cards-caption">
+                                Power output
+                            </span>
+                            <span class="featured-section__cards-value">441 kw</span>
+                            <span class="featured-section__cards-second-value">(600 hp)</span>
+                        </div>
+                        <div class="featured-section__card card">
+                            <span class="featured-section__cards-caption">
+                                Acceleration
+                            </span>
+                            <span class="featured-section__cards-value">3.8</span>
+                            <span class="featured-section__cards-second-value">seconds</span>
+                        </div>
+                        <div class="featured-section__card card">
+                            <span class="featured-section__cards-caption">
+                                Torque
+                            </span>
+                            <span class="featured-section__cards-value">800</span>
+                            <span class="featured-section__cards-second-value">Nm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
