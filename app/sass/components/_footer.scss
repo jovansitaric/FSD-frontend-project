@@ -1,0 +1,38 @@
+.footer {
+    position: relative;
+    bottom: 47px;
+    /* Firefox fix */
+    margin-bottom: -47px;
+}
+
+.footer__column {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8d8e90;
+}
+
+.footer__list {
+    text-align: right;
+    @include breakpoint("large-desktop") {
+        position: relative;
+        left: 135px;
+    }
+}
+
+.footer__list-item {
+    @include inline-block;
+    @include breakpoint("large-desktop") {
+        margin-right: 26px;
+    }
+}
+
+.footer__list-item-link {
+    font-size: 14px;
+    color: inherit;
+    @include transition(0.4s);
+    &:hover {
+        opacity: 0.6;
+    }
+}

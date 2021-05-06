@@ -5,7 +5,7 @@
 
 .brand {
     width: 98px;
-    float: left;    
+    float: left;
     margin-left: 10.3px;
     @include inline-block;
     @extend %clearfix;
@@ -29,6 +29,7 @@
 .navigation-list__item {
     margin: 0 9.6px;
     text-align: center;
+    position: relative;
     @include inline-block;
     @include breakpoint("tablet-desktop") {
         // &:nth-of-type(2) {
@@ -68,13 +69,32 @@
 .navigation--active {
     border-bottom: 1px solid $accent-color;
     margin-bottom: -1px;
-    color: #fdfdfd;    
+    color: #fdfdfd;
 }
 
 /* dropdown */
 
+.dropdown {
+    border: 1px solid #5c5c5c;
+    border-top: 1px solid $accent-color;
+}
+
+.dropdown a {
+    line-height: 47px;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 0.8px;
+    @include transition(0.4s);
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
 .navigation li {
-    transition-duration: 0.5s;
+    @include transition(0.4s);
+    &:hover {
+        opacity: 0.6;
+    }
 }
 
 .navigation li:hover {
@@ -85,10 +105,19 @@
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    margin-top: 1rem;
-    left: 0;
+    margin-top: 16px;
+    left: 16px;
+    padding: 0 15px;
     display: none;
-    font-size: 16px;
+    width: 140px;
+    height: 135px;
+    padding-right: 19px;
+    @include breakpoint("phone") {
+        position: relative;
+        margin: 0 auto;
+        left: 0;
+        margin-top: 20px;
+    }
 }
 
 .navigation ul li:hover > ul,
@@ -99,15 +128,24 @@
 }
 
 .navigation ul li ul li {
-    clear: both;
     width: 100%;
+    border-bottom: 1px solid #5c5c5c;
+    text-align: left;
+    margin-top: -2px;
+    max-height: 47px;
+    &:hover {
+        opacity: 0.6;
+    }
+    &:last-of-type() {
+        border-bottom: 0;
+    }
 }
 
-.navigation-button {    
+.navigation-button {
     padding: 17px 29px;
     background-color: #333333;
     color: white;
-    border-radius: 6px;
+    border-radius: 3px;
     border: 1px solid transparent;
     @include transition(0.4s);
     &:hover {

@@ -12,12 +12,13 @@
 }
 
 @font-face {
-    font-family: 'Roboto Condensed';
-    src: url('../../app/fonts/RobotoCondensed-Regular.eot');
-    src: url('../../app/fonts/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../../app/fonts/RobotoCondensed-Regular.woff2') format('woff2'),
-        url('../../app/fonts/RobotoCondensed-Regular.woff') format('woff'),
-        url('../../app/fonts/RobotoCondensed-Regular.ttf') format('truetype');
+    font-family: "Roboto Condensed";
+    src: url("../../app/fonts/RobotoCondensed-Regular.eot");
+    src: url("../../app/fonts/RobotoCondensed-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("../../app/fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+        url("../../app/fonts/RobotoCondensed-Regular.woff") format("woff"),
+        url("../../app/fonts/RobotoCondensed-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -39,7 +40,8 @@
 @font-face {
     font-family: "Montserrat";
     src: url("../../app/fonts/Montserrat-Black.eot");
-    src: url("../../app/fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"),
+    src: url("../../app/fonts/Montserrat-Black.eot?#iefix")
+            format("embedded-opentype"),
         url("../../app/fonts/Montserrat-Black.woff2") format("woff2"),
         url("../../app/fonts/Montserrat-Black.woff") format("woff"),
         url("../../app/fonts/Montserrat-Black.ttf") format("truetype");
@@ -51,7 +53,8 @@
 @font-face {
     font-family: "Montserrat";
     src: url("../../app/fonts/Montserrat-Bold.eot");
-    src: url("../../app/fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+    src: url("../../app/fonts/Montserrat-Bold.eot?#iefix")
+            format("embedded-opentype"),
         url("../../app/fonts/Montserrat-Bold.woff2") format("woff2"),
         url("../../app/fonts/Montserrat-Bold.woff") format("woff"),
         url("../../app/fonts/Montserrat-Bold.ttf") format("truetype");
@@ -63,13 +66,21 @@
 @font-face {
     font-family: "Montserrat";
     src: url("../../app/fonts/Montserrat-ExtraBold.eot");
-    src: url("../../app/fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    src: url("../../app/fonts/Montserrat-ExtraBold.eot?#iefix")
+            format("embedded-opentype"),
         url("../../app/fonts/Montserrat-ExtraBold.woff2") format("woff2"),
         url("../../app/fonts/Montserrat-ExtraBold.woff") format("woff"),
         url("../../app/fonts/Montserrat-ExtraBold.ttf") format("truetype");
     font-weight: 800;
     font-style: normal;
     font-display: swap;
+}
+
+p,
+a,
+span,
+li {
+    font-size: 16px;
 }
 
 a {
@@ -92,8 +103,7 @@ h6 {
 }
 
 p {
-    font-family: Montserrat, Helvetica, sans-serif;    
-    font-size: 16px;
+    font-family: Montserrat, Helvetica, sans-serif;
 }
 
 img {
@@ -101,9 +111,15 @@ img {
     height: auto;
 }
 
+small {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
 .captions {
     font-family: "Roboto Condensed", Helvetica, sans-serif;
-    font-size: 11px;    
+    font-size: 11px;
     letter-spacing: 5.5px;
     color: $accent-color;
     text-transform: uppercase;

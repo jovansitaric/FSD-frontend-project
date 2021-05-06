@@ -1,0 +1,137 @@
+/* The products-section__modal (background) */
+.products-section__modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+/* products-section__modal Content/Box */
+.products-section__modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.products-section__modal-close {
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: -22px;
+    top: -22px;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    @include transition(0.4s);
+    &:hover,
+    &:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #fff;
+        border: 1px solid #000;
+    }
+    &:after {
+        content: "\00D7";
+        display: block;
+        padding-top: 6px;
+    }
+}
+
+.products-section__modal-content {
+    border-radius: 17px;
+    position: relative;
+    min-height: 400px;
+}
+
+.products-section__modal-column {
+    &:first-of-type() {
+        float: left;
+        @extend %clearfix;
+    }
+}
+
+.products-section__modal-car {
+    background-color: #efeff4;
+    padding: 58px 0;
+    max-height: 398px;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+
+.new-tag {
+    position: absolute;
+    background-color: #8d2df6;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    left: 72px;
+}
+
+.products-section__modal-car-image {
+    min-width: 57%;
+}
+
+.products-section__modal-car-caption {
+    display: block;
+    margin-top: 17px;
+}
+
+.products-section__modal-car-heading {
+    margin-top: 17px;
+    font-weight: bold;
+}
+
+.products-section__modal-button {
+    margin: 0 auto;
+    margin-top: 0px;
+    background-color: #202020;
+    color: white;
+    max-width: 200px;
+    margin-top: 40px;
+    border-radius: 12px;
+    padding: 12px 0;
+    margin-bottom: 21px;
+}
+
+.products-section__modal-button-caption {
+    font-size: 14px;
+    color: #858585;
+}
+
+.products-section__modal-button-price {
+    margin-top: 10px;
+}
+
+.products-section__modal-info {
+    text-align: left;
+    padding: 45px 0;
+}
+
+.products-section__modal-info-main-heading {
+    font-weight: bold;
+}
+
+.products-section__modal-info-second-heading {
+    font-size: 17px;
+    margin-top: 10px;
+    color: #8f8f8f;
+}
+
+.products-section__modal-info-checkbox,
+.products-section__modal-info-paragraph,
+.products-section__modal-info-pricing {
+    @include inline-block;
+}

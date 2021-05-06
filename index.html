@@ -15,6 +15,7 @@
                     <img
                         src="Assets/Logo/Audi-Logo_2016@2x.png"
                         class="brand"
+                        alt="audi logo"
                     />
                     <span class="hamburger">
                         <span class="bar"></span>
@@ -36,9 +37,9 @@
                                 >About us</a
                             >
                             <ul class="dropdown">
-                                <li><a href="javascript:;">Sub-1</a></li>
-                                <li><a href="javascript:;">Sub-2</a></li>
-                                <li><a href="javascript:;">Sub-3</a></li>
+                                <li><a href="javascript:;">Our Team</a></li>
+                                <li><a href="javascript:;">Leadership</a></li>
+                                <li><a href="javascript:;">Partners</a></li>
                             </ul>
                         </li>
                         <li class="navigation-list__item">
@@ -71,10 +72,6 @@
                         background-image: url('Assets/Images/header-img-1920.jpg');
                     "
                 >
-                    <!-- <img
-                        class="mySlides__image"
-                        src="Assets/Images/header-img-1920.jpg"
-                    /> -->
                     <div class="mySlides__description website-wrapper">
                         <p class="mySlides__description-captions captions">
                             New arrival
@@ -94,23 +91,14 @@
                         class="mySlides__image"
                         src="Assets/Images/section-banner-1920.jpg"
                         style="width: 100%"
+                        alt="black audi"
                     />
                 </div>
 
                 <!-- Next and previous buttons -->
                 <a class="prev icon-chevron-right" onclick="plusSlides(-1)"></a>
                 <a class="next icon-chevron-right" onclick="plusSlides(1)"></a>
-                <!-- &#10094;
-&#10095; -->
             </div>
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
-                integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
-                crossorigin="anonymous"
-            ></script>
-            <script src="app/js/main.js"></script>
-            <script src="app/js/navbar.js"></script>
-            <script src="app/js/slider.js"></script>
         </section>
         <!-- Hero section end -->
         <!-- About us section start -->
@@ -148,6 +136,7 @@
             </div>
         </section>
         <!-- About us section end -->
+        <!-- Featured section start -->
         <section
             class="featured-section"
             style="
@@ -155,7 +144,7 @@
             "
         >
             <div class="website-wrapper">
-                <div class="featured-section col-middle-6">
+                <div class="featured-section col-large-6">
                     <p class="captions">Featured</p>
                     <h2 class="featured-section__main-heading">
                         Brand new The Audi RSQ8
@@ -170,26 +159,519 @@
                             <span class="featured-section__cards-caption">
                                 Power output
                             </span>
-                            <span class="featured-section__cards-value">441 kw</span>
-                            <span class="featured-section__cards-second-value">(600 hp)</span>
+                            <span class="featured-section__cards-value"
+                                >441 kw</span
+                            >
+                            <span class="featured-section__cards-second-value"
+                                >(600 hp)</span
+                            >
                         </div>
                         <div class="featured-section__card card">
                             <span class="featured-section__cards-caption">
                                 Acceleration
                             </span>
-                            <span class="featured-section__cards-value">3.8</span>
-                            <span class="featured-section__cards-second-value">seconds</span>
+                            <span class="featured-section__cards-value"
+                                >3.8</span
+                            >
+                            <span class="featured-section__cards-second-value"
+                                >seconds</span
+                            >
                         </div>
                         <div class="featured-section__card card">
                             <span class="featured-section__cards-caption">
                                 Torque
                             </span>
-                            <span class="featured-section__cards-value">800</span>
-                            <span class="featured-section__cards-second-value">Nm</span>
+                            <span class="featured-section__cards-value"
+                                >800</span
+                            >
+                            <span class="featured-section__cards-second-value"
+                                >Nm</span
+                            >
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Featured section end -->
+        <!-- Products section start -->
+        <section class="products-section">
+            <div class="website-wrapper">
+                <div class="products-section__content">
+                    <h2 class="products-section__content-heading">
+                        You might take a look...
+                    </h2>
+                </div>
+                <div class="products-section__products">
+                    <div class="products-section__products-panel col-middle-3">
+                        <img
+                            src="Assets/Product%20Images/product-card-audi-q3.png"
+                            alt="audi q3"
+                        />
+                        <span class="products-section__products-panel-caption"
+                            >5 Seats, 4 Doors</span
+                        >
+                        <h2 class="products-section__products-panel-heading">
+                            Audi Q3 2020
+                        </h2>
+                        <ul class="products-section__list">
+                            <li class="products-section__list-item">
+                                <span
+                                    class="products-section__list-icon icon-Path"
+                                ></span
+                                >Includes 300 free km
+                            </li>
+                            <li class="products-section__list-item">
+                                <span
+                                    class="products-section__list-icon icon-Path"
+                                ></span
+                                >Theft Protection
+                            </li>
+                            <li class="products-section__list-item">
+                                <span
+                                    class="products-section__list-icon icon-Path"
+                                ></span
+                                >Non Refundable
+                            </li>
+                        </ul>
+                        <div class="products-section__footer">
+                            <div class="col-middle-6 products-section__column">
+                                <span class="products-section__footer-caption"
+                                    >Starting from</span
+                                >
+                                <h3 class="products-section__footer-price">
+                                    29.999 &#8364;
+                                </h3>
+                            </div>
+                            <div class="col-middle-6 products-section__column">
+                                <button
+                                    class="products-section__button"
+                                    data-button="1"
+                                >
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-section__modal">
+                            <div class="products-section__modal-content">
+                                <span
+                                    class="products-section__modal-close"
+                                    data-close="1"
+                                    ></span
+                                >
+                                <div class="col-middle-4 products-section__modal-column">
+                                    <div class="products-section__modal-car">
+                                        <span class="new-tag">NEW</span
+                                        ><img class="products-section__modal-car-image" src="Assets/Product%20Images/product-card-audi-q3.png" alt="audi q7" />
+                                        <span
+                                            class="products-section__modal-car-caption"
+                                            >5 Seats, 4 Doors</span
+                                        >
+                                        <h2
+                                            class="products-section__modal-car-heading"
+                                        >
+                                            Audi Q3 2020
+                                        </h2>
+                                        <div class="products-section__modal-button">
+                                            <span class="products-section__modal-button-caption">Starting from</span>
+                                            <h3 class="products-section__modal-button-price">39.999 &#8364;</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-middle-7 products-section__modal-column">
+                                    <div class="products-section__modal-info">
+                                        <h2 class="products-section__modal-info-main-heading">Audi Configurator</h2>
+                                        <h3 class="products-section__modal-info-second-heading">Create your own audi.</h3>
+                                        <ul class="products-section__modal-info-list">
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox" checked><p class="products-section__modal-info-paragraph">48-V electrycal system</p><span class="products-section__modal-info-pricing">0,- EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox"><p class="products-section__modal-info-paragraph">Adaptive air suspension - sport</p><span class="products-section__modal-info-pricing">278,60 EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox" checked><p class="products-section__modal-info-paragraph">Acoustic side windows - optional</p><span class="products-section__modal-info-pricing">558,78 EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox" checked><p class="products-section__modal-info-paragraph">Acoustic and heat-insulating glass</p><span class="products-section__modal-info-pricing">357,29 EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox"><p class="products-section__modal-info-paragraph">Ambiental LED</p><span class="products-section__modal-info-pricing">637,48 EUR</span></div></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-section__products-panel col-middle-3">
+                        <img
+                            src="Assets/Product%20Images/product-card-audi-a4.png"
+                            alt="audi a4"
+                        />
+                        <span
+                            class="products-section__products-panel-caption"
+                            style="margin-top: 26px"
+                            >5 Seats, 4 Doors</span
+                        >
+                        <h2 class="products-section__products-panel-heading">
+                            Audi A4 2020
+                        </h2>
+                        <ul class="products-section__list">
+                            <li class="products-section__list-item">
+                                <span
+                                    class="products-section__list-icon icon-Path"
+                                ></span
+                                >Includes 300 free km
+                            </li>
+                            <li class="products-section__list-item">
+                                <span
+                                    class="products-section__list-icon icon-Path"
+                                ></span
+                                >Theft Protection
+                            </li>
+                            <li class="products-section__list-item">
+                                <span
+                                    class="products-section__list-icon icon-Path"
+                                ></span
+                                >Non Refundable
+                            </li>
+                        </ul>
+                        <div class="products-section__footer">
+                            <div class="col-middle-6 products-section__column">
+                                <span class="products-section__footer-caption"
+                                    >Starting from</span
+                                >
+                                <h3 class="products-section__footer-price">
+                                    24.999 &#8364;
+                                </h3>
+                            </div>
+                            <div class="col-middle-6 products-section__column">
+                                <button
+                                    class="products-section__button"
+                                    data-button="2"
+                                >
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-section__modal">
+                            <div class="products-section__modal-content">
+                                <span
+                                    class="products-section__modal-close"
+                                    data-close="2"
+                                    ></span
+                                >
+                                <div class="col-middle-4 products-section__modal-column">
+                                    <div class="products-section__modal-car">
+                                        <span class="new-tag">NEW</span
+                                        ><img class="products-section__modal-car-image" src="Assets/Product%20Images/product-card-audi-a4.png" alt="audi q7" />
+                                        <span
+                                            class="products-section__modal-car-caption"
+                                            >5 Seats, 4 Doors</span
+                                        >
+                                        <h2
+                                            class="products-section__modal-car-heading"
+                                        >
+                                            Audi A4 2020
+                                        </h2>
+                                        <div class="products-section__modal-button">
+                                            <span class="products-section__modal-button-caption">Starting from</span>
+                                            <h3 class="products-section__modal-button-price">39.999 &#8364;</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-middle-7 products-section__modal-column">
+                                    <div class="products-section__modal-info">
+                                        <h2 class="products-section__modal-info-main-heading">Audi Configurator</h2>
+                                        <h3 class="products-section__modal-info-second-heading">Create your own audi.</h3>
+                                        <ul class="products-section__modal-info-list">
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox" checked><p class="products-section__modal-info-paragraph">48-V electrycal system</p><span class="products-section__modal-info-pricing">0,- EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox"><p class="products-section__modal-info-paragraph">Adaptive air suspension - sport</p><span class="products-section__modal-info-pricing">278,60 EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox" checked><p class="products-section__modal-info-paragraph">Acoustic side windows - optional</p><span class="products-section__modal-info-pricing">558,78 EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox" checked><p class="products-section__modal-info-paragraph">Acoustic and heat-insulating glass</p><span class="products-section__modal-info-pricing">357,29 EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox"><p class="products-section__modal-info-paragraph">Ambiental LED</p><span class="products-section__modal-info-pricing">637,48 EUR</span></div></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-section__products-panel col-middle-3">
+                        <img
+                            src="Assets/Product%20Images/product-card-audi-a3.png"
+                            alt="audi a3"
+                        />
+                        <span class="products-section__products-panel-caption"
+                            >5 Seats, 4 Doors</span
+                        >
+                        <h2 class="products-section__products-panel-heading">
+                            Audi A3 2020
+                        </h2>
+                        <ul class="products-section__list">
+                            <li class="products-section__list-item">
+                                <span
+                                    class="products-section__list-icon icon-Path"
+                                ></span
+                                >Includes 300 free km
+                            </li>
+                            <li class="products-section__list-item">
+                                <span
+                                    class="products-section__list-icon icon-Path"
+                                ></span
+                                >Theft Protection
+                            </li>
+                            <li class="products-section__list-item">
+                                <span
+                                    class="products-section__list-icon icon-Path"
+                                ></span
+                                >Non Refundable
+                            </li>
+                        </ul>
+                        <div class="products-section__footer">
+                            <div class="col-middle-6 products-section__column">
+                                <span class="products-section__footer-caption"
+                                    >Starting from</span
+                                >
+                                <h3 class="products-section__footer-price">
+                                    19.999 &#8364;
+                                </h3>
+                            </div>
+                            <div class="col-middle-6 products-section__column">
+                                <button
+                                    class="products-section__button"
+                                    data-button="3"
+                                >
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-section__modal">
+                            <div class="products-section__modal-content">
+                                <span
+                                    class="products-section__modal-close"
+                                    data-close="3"
+                                    ></span
+                                >
+                                <div class="col-middle-4 products-section__modal-column">
+                                    <div class="products-section__modal-car">
+                                        <span class="new-tag">NEW</span
+                                        ><img class="products-section__modal-car-image" src="Assets/Product%20Images/product-card-audi-a3.png" alt="audi q7" />
+                                        <span
+                                            class="products-section__modal-car-caption"
+                                            >5 Seats, 4 Doors</span
+                                        >
+                                        <h2
+                                            class="products-section__modal-car-heading"
+                                        >
+                                            Audi A3 2020
+                                        </h2>
+                                        <div class="products-section__modal-button">
+                                            <span class="products-section__modal-button-caption">Starting from</span>
+                                            <h3 class="products-section__modal-button-price">39.999 &#8364;</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-middle-7 products-section__modal-column">
+                                    <div class="products-section__modal-info">
+                                        <h2 class="products-section__modal-info-main-heading">Audi Configurator</h2>
+                                        <h3 class="products-section__modal-info-second-heading">Create your own audi.</h3>
+                                        <ul class="products-section__modal-info-list">
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox" checked><p class="products-section__modal-info-paragraph">48-V electrycal system</p><span class="products-section__modal-info-pricing">0,- EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox"><p class="products-section__modal-info-paragraph">Adaptive air suspension - sport</p><span class="products-section__modal-info-pricing">278,60 EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox" checked><p class="products-section__modal-info-paragraph">Acoustic side windows - optional</p><span class="products-section__modal-info-pricing">558,78 EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox" checked><p class="products-section__modal-info-paragraph">Acoustic and heat-insulating glass</p><span class="products-section__modal-info-pricing">357,29 EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox"><p class="products-section__modal-info-paragraph">Ambiental LED</p><span class="products-section__modal-info-pricing">637,48 EUR</span></div></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-section__products-panel col-middle-3">
+                        <img
+                            src="Assets/Product%20Images/product-card-audi-q7.png"
+                            alt="audi q7"
+                        />
+                        <span class="products-section__products-panel-caption"
+                            >5 Seats, 4 Doors</span
+                        >
+                        <h2 class="products-section__products-panel-heading">
+                            Audi Q7 2020
+                        </h2>
+                        <ul class="products-section__list">
+                            <li class="products-section__list-item">
+                                <span
+                                    class="products-section__list-icon icon-Path"
+                                ></span
+                                >Includes 300 free km
+                            </li>
+                            <li class="products-section__list-item">
+                                <span
+                                    class="products-section__list-icon icon-Path"
+                                ></span
+                                >Theft Protection
+                            </li>
+                            <li class="products-section__list-item">
+                                <span
+                                    class="products-section__list-icon icon-Path"
+                                ></span
+                                >Non Refundable
+                            </li>
+                        </ul>
+                        <div class="products-section__footer">
+                            <div class="col-middle-6 products-section__column">
+                                <span class="products-section__footer-caption"
+                                    >Starting from</span
+                                >
+                                <h3 class="products-section__footer-price">
+                                    39.999 &#8364;
+                                </h3>
+                            </div>
+                            <div class="col-middle-6 products-section__column">
+                                <button
+                                    class="products-section__button"
+                                    data-button="4"
+                                >
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products-section__modal">
+                            <div class="products-section__modal-content">
+                                <span
+                                    class="products-section__modal-close"
+                                    data-close="4"
+                                    ></span
+                                >
+                                <div class="col-middle-4 products-section__modal-column">
+                                    <div class="products-section__modal-car">
+                                        <span class="new-tag">NEW</span
+                                        ><img class="products-section__modal-car-image" src="Assets/Product%20Images/product-card-audi-q7.png" alt="audi q7" />
+                                        <span
+                                            class="products-section__modal-car-caption"
+                                            >5 Seats, 4 Doors</span
+                                        >
+                                        <h2
+                                            class="products-section__modal-car-heading"
+                                        >
+                                            Audi Q7 2020
+                                        </h2>
+                                        <div class="products-section__modal-button">
+                                            <span class="products-section__modal-button-caption">Starting from</span>
+                                            <h3 class="products-section__modal-button-price">39.999 &#8364;</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-middle-7 products-section__modal-column">
+                                    <div class="products-section__modal-info">
+                                        <h2 class="products-section__modal-info-main-heading">Audi Configurator</h2>
+                                        <h3 class="products-section__modal-info-second-heading">Create your own audi.</h3>
+                                        <ul class="products-section__modal-info-list">
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox" checked><p class="products-section__modal-info-paragraph">48-V electrycal system</p><span class="products-section__modal-info-pricing">0,- EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox"><p class="products-section__modal-info-paragraph">Adaptive air suspension - sport</p><span class="products-section__modal-info-pricing">278,60 EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox" checked><p class="products-section__modal-info-paragraph">Acoustic side windows - optional</p><span class="products-section__modal-info-pricing">558,78 EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox" checked><p class="products-section__modal-info-paragraph">Acoustic and heat-insulating glass</p><span class="products-section__modal-info-pricing">357,29 EUR</span></div></li>
+                                            <li><div class="products-section__modal-info-wrapper"><input class="products-section__modal-info-checkbox" type="checkbox"><p class="products-section__modal-info-paragraph">Ambiental LED</p><span class="products-section__modal-info-pricing">637,48 EUR</span></div></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Products section end -->
+        <!-- Contact section start -->
+        <section
+            class="contact-section"
+            style="
+                background-image: url(Assets/Images/contact-form-img.png),
+                    linear-gradient(#292a2f, #09090b);
+            "
+        >
+            <div class="website-wrapper">
+                <div class="contact-section__content">
+                    <div class="col-middle-6 contact-section__content-column">
+                        <p class="captions">Contact us</p>
+                        <h2 class="contact-section__content-heading">
+                            If you have any questions, don’t hesitate to contact
+                            us.
+                        </h2>
+                    </div>
+                    <div class="col-middle-6 contact-section__content-column">
+                        <form class="contact-section__form">
+                            <div class="contact-section__form-content">
+                                <input
+                                    class="contact-section__form-content-elements"
+                                    type="text"
+                                    placeholder="Enter your name "
+                                    required
+                                />
+                                <span
+                                    class="contact-section__form-placeholder first-placeholder"
+                                    >*</span
+                                >
+                                <input
+                                    class="contact-section__form-content-elements"
+                                    type="text"
+                                    placeholder="Enter your email"
+                                    required
+                                />
+                                <span
+                                    class="contact-section__form-placeholder second-placeholder"
+                                    >*</span
+                                >
+                                <textarea
+                                    class="contact-section__form-content-message"
+                                    placeholder="Your message"
+                                    required
+                                ></textarea>
+                                <span
+                                    class="contact-section__form-placeholder third-placeholder"
+                                    >*</span
+                                >
+                                <button
+                                    class="contact-section__form-button"
+                                    type="submit"
+                                >
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section end -->
+        <!-- Footer start -->
+        <footer class="footer">
+            <div class="website-wrapper">
+                <div class="footer__column col-middle-6">
+                    <!-- Due to pixel perfect design, year is not dynamically updated -->
+                    <small class="footer__copyright"
+                        >&#169; 2020 FSD. All rights reserved</small
+                    >
+                </div>
+                <div class="footer__column col-middle-6">
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a
+                                class="footer__list-item-link"
+                                href="javascript:;"
+                                >Terms of agreement</a
+                            >
+                        </li>
+                        <li class="footer__list-item">
+                            <a
+                                class="footer__list-item-link"
+                                href="javascript:;"
+                                >Privacy policy</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+            integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+            crossorigin="anonymous"
+        ></script>
+        <script src="app/js/main.js"></script>
+        <script src="app/js/navbar.js"></script>
+        <script src="app/js/slider.js"></script>
+        <script src="app/js/modal.js"></script>
     </body>
 </html>

@@ -1,14 +1,26 @@
 .about-us-section {
-    padding-top: 57px;
-    padding-bottom: 57px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     @include breakpoint("desktop") {
         min-height: 730px;
+    }
+    @include breakpoint("tablet-desktop") {
+        padding-top: 57px;
+        padding-bottom: 57px;
+    }
+}
+
+.about-us {
+    @include breakpoint("tablet") {
+        padding: 0 14px;
     }
 }
 
 .about-us__car {
     position: relative;
-    top: 117px;
+    @include breakpoint("desktop") {
+        top: 117px;
+    }
     @include breakpoint("phone") {
         top: 0;
     }
@@ -20,22 +32,16 @@
 }
 
 .about-us__car-rectangle {
-    height: 98.2vh;
+    height: 520px;
     position: absolute;
-    top: -124px;
+    top: -125px;
     width: 63%;
     left: 97px;
     margin: 0 auto;
     background-color: $nero-black;
-    @include breakpoint("phone") {
-        height: 68vh;
-        top: -30px;
-    }
-    @include breakpoint(120px, 488px) {
-        height: 58vh;
-    }
-    @include breakpoint(120px, 370px) {
-        height: 47vh;
+    display: none;
+    @include breakpoint("desktop") {
+        display: block;
     }
 }
 
@@ -52,10 +58,10 @@
 
 .about-us-description {
     position: relative;
-    top: 111px;
     padding-top: 19px;
     @include breakpoint("desktop") {
         padding-left: 112px;
+        top: 110px;
     }
 }
 

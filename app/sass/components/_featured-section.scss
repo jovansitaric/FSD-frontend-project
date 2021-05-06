@@ -1,11 +1,18 @@
 .featured-section {
     padding: 54px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include breakpoint("desktop") {
+        background-position: 45% 44%;
+        background-size: 121%;
+    }
 }
 
 .featured-section__main-heading {
     font-size: 38px;
     font-weight: bold;
     margin-top: 17px;
+    color: #fff;
 }
 
 .featured-section__paragraph {
@@ -13,20 +20,28 @@
     line-height: 26px;
     max-width: 560px;
     font-size: 14px;
+    color: #cec5c6;
 }
 
 .featured-section__cards {
     padding-top: 40px;
+    @include breakpoint("phone") {
+        text-align: center;
+    }
 }
 
 .featured-section__card {
+    background-color: #fff; // fallback
     background-color: rgba($color: #fff, $alpha: 0.2);
     border: 1px solid rgba($color: #fff, $alpha: 0.2);
     min-height: 145px;
-    min-width: 165px;
-    margin-right: 28px;
+    width: 165px;
+    margin-right: 30px;
     color: #fff;
     @include inline-block;
+    @include breakpoint("phone") {
+        margin-right: 0;
+    }
     &:last-of-type() {
         margin-right: 0;
     }
@@ -37,7 +52,7 @@
     font-size: 13px;
     letter-spacing: 2.4px;
     display: block;
-    padding: 0 26px;
+    padding: 0 24px;
     padding-top: 25px;
     text-align: center;
 }
