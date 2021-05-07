@@ -46,6 +46,12 @@
     transition: $x;
 }
 
+@mixin transform($value) {
+    -webkit-transform: $value;
+    -ms-transform: $value;
+    transform: $value;
+}
+
 @mixin inline-block() {
     display: inline-block;
     vertical-align: middle;

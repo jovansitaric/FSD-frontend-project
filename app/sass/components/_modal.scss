@@ -17,7 +17,7 @@
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     border: 1px solid #888;
-    width: 60%; /* Could be more or less, depending on screen size */
+    width: 55%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -130,8 +130,30 @@
     color: #8f8f8f;
 }
 
+.products-section__modal-info-list {
+    margin-top: 30px;
+    line-height: 31px;
+    margin-left: -3px;
+}
+
+.products-section__modal-info-wrapper {
+    position: relative;
+    line-height: 44px;
+    font-weight: bold;
+}
+
 .products-section__modal-info-checkbox,
 .products-section__modal-info-paragraph,
 .products-section__modal-info-pricing {
     @include inline-block;
+}
+
+.products-section__modal-info-checkbox {
+    margin-right: 14px;
+}
+
+.products-section__modal-info-pricing {
+    float: right;
+    font-family: Montserrat, Helvetica, sans-serif;
+    @extend %clearfix;
 }
